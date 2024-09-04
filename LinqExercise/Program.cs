@@ -91,11 +91,11 @@ namespace LinqExercise
             Console.WriteLine();
 
             //TODO: Add an employee to the end of the list without using employees.Add()
-            var newEmployee1 = employees.Append(new Employee("Bob", "Bobberson", 65, 30));
-            var newEmployee2 = employees.Append(new Employee("Sara", "Sarerson", 40, 10));
-            var newEmployee3 = employees.Append(new Employee("Jeff", "Jefferson", 26, 2));
-            var newEmployee4 = employees.Append(new Employee("Ken", "Kennerson", 50, 25));
-            var newEmployee5 = employees.Append(new Employee("Katie", "Katerson", 20, 3));
+            employees = employees.Append(new Employee("Bob", "Bobberson", 65, 30)).ToList();
+            employees = employees.Append(new Employee("Sara", "Sarerson", 40, 10)).ToList();
+            employees = employees.Append(new Employee("Jeff", "Jefferson", 26, 2)).ToList();
+            employees = employees.Append(new Employee("Ken", "Kennerson", 50, 25)).ToList();
+            employees = employees.Append(new Employee("Katie", "Katerson", 20, 3)).ToList();
 
             Console.WriteLine();
         }
